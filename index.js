@@ -12,11 +12,12 @@
  * @see {@link https://strongloop.com/strongblog/async-error-handling-expressjs-es7-promises-generators/#usinges7asyncawait}
  * @example
  *
- * import wrap from 'lib/express-async-wrapper'
+ * import wrap from 'express-async-wrapper'
  *
- * //.. some express setup stuff
- *
- * app.get('/foo', wrap(someAsyncRouteFunction))
+ * export default wrap(async (req, res) => {
+ *   await slowNetworkThing()
+ *   res.send('ok')
+ * })
  */
 module.exports = (fn) => {
   return (...args) => {
