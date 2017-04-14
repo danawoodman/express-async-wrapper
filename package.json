@@ -7,10 +7,6 @@
     "test": "mocha '**/*.test.js'",
     "watch-test": "npm test -- --watch"
   },
-  "repository": {
-    "type": "git",
-    "url": "github.com/danawoodman/express-async-wrapper"
-  },
   "keywords": [
     "express",
     "connect",
@@ -31,6 +27,14 @@
     "error",
     "handling"
   ],
+  "repository": {
+    "type": "git",
+    "url": "github.com/danawoodman/express-async-wrapper"
+  },
+  "bugs": {
+    "url": "https://github.com/danawoodman/express-async-wrapper/issues"
+  },
+  "homepage": "https://github.com/danawoodman/express-async-wrapper#readme",
   "author": "Dana Woodman <dana@danawoodman.com> (http://danawoodman.com/)",
   "license": "MIT",
   "devDependencies": {
